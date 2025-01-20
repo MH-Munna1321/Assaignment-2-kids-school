@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.width{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+*{
+    margin: 0;
+}
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .bg{
+    background-color: #F7F7F7;
+  }
+
+  .dark{
+    color: #808080;
+  }
+
+/* font-color */
+
+/* shared styels */
+.btn-primary{
+    font-size: 1.25rem;
+    color: white;
+    background-color: #FEA301;
+    padding: 10px 60.5px;
+    border-radius: 12px;
+    border: none;
+}
+
+/* navbar */
+.nav-title{
+    font-size: 2rem;
+}
+
+.logo-title{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-items li {
+    list-style: none;
+    text-decoration: none;
+}
+.nav-item-section{
+    display: flex;
+    gap: 32px;
+}
+
+.nav-items li a{
+text-decoration: none;
+font-size: 1.25rem;
+font-weight: bold;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hr-line{
+    display: none;
+}
+
+/* banner section */
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.banner-all{
+    max-width: 640px;
+    width: 100%;
+}
+
+.banner-description{
+    font-size: 1.25rem;
+    margin-top: 24px;
+}
+
+.b-button{
+    color: #FFF4DC;
+    background-color: black;
+    padding: 10px 47px;
+    border: none;
+    border-radius: 12px;
+    margin-top: 24px;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* curriculam section */
+.bg{
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+}
+
+.curriculam-title{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.curriculam-box-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.curriculam-box-description{
+    font-size: 1rem;
+    margin-bottom: 32px;
+}
+
+.rm-button{
+    text-decoration: none;
+    color: #01ACFD;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.c-boxs{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    text-align: center;
+    
+}
+.curriculam-box{
+    width: 364px;
+    height: 476px;
+    border: 1px solid rgb(224, 221, 221);
+    align-content: center;
+    gap: 30px;
+    border-radius: 12px;
+
+    
+}
+
+.gradinet-1{
+    background: linear-gradient( to bottom , #DEF5FF,white,white,white );
+}
+
+.gradinet-2{
+    background: linear-gradient( to bottom , #FFF4DC,white,white,white );
+}
+
+.gradinet-3{
+    background: linear-gradient( to bottom , #F2E8FF,white,white,white );
+}
+
+
+/* mid device responsive */
+@media screen and (max-width: 576px) {
+    .nav-title, .nav-item, .btn-primary{
+        display: none;
+    }
+
+    .menu-icon{
+        display: block;
+        margin-right: 16px;
+    }
+.hr-line{
+    display: block;
+}
+
+.banner{
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.banner-title{
+    margin-top: 20px;
+}
+
+.banner-image{
+    width: 100%;
+}
+
+.c-boxs{
+    flex-direction: column;
+}
+.curriculam{
+    justify-items: center;
+}
+}
+
+/* max device */
+@media screen and (min-width: 578px) {
+    .menu-icon{
+     display: none;
+    }
+}
