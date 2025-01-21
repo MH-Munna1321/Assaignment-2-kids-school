@@ -380,6 +380,7 @@ font-weight: bold;
 
 /* mid device responsive */
 @media screen and (max-width: 576px) {
+
     .nav-title, .nav-item, .btn-primary{
         display: none;
     }
@@ -431,6 +432,14 @@ font-weight: bold;
 .footer> .k-touch, .about-section{
     margin-top: 40px;
 }
+.story-box-2, .story-box-3, .story-box-4, .story-box-5{
+    height: 100%;
+    padding-bottom: 20px;
+}
+.footer-description{
+    max-width: 350px;
+}
+
 }
 
 /* max device */
@@ -438,5 +447,4 @@ font-weight: bold;
     .menu-icon{
      display: none;
     }
-
 }
