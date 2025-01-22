@@ -326,9 +326,6 @@ font-weight: bold;
 
 
 /* Footer */
-*{
-    margin: 0;
-}
 
 .footer-logo{
     display: flex;
@@ -396,6 +393,8 @@ font-weight: bold;
 .banner{
     flex-direction: column-reverse;
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
 }
 .banner-title{
     margin-top: 20px;
@@ -434,14 +433,25 @@ font-weight: bold;
 }
 .story-box-2, .story-box-3, .story-box-4, .story-box-5{
     height: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 8px;
+
 }
 .footer-description{
-    max-width: 350px;
+width: 357px;
 }
-
+.time-button{
+    font-size: 0.7rem;
+    margin-top: 170px;
+    padding: 5px 10px;
 }
-
+.f-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 90%;
+    row-gap: 18px;
+}
+}
 /* max device */
 @media screen and (min-width: 578px) {
     .menu-icon{
